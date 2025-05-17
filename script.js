@@ -43,3 +43,19 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
 
   document.querySelectorAll('.proyecto').forEach(card => observer.observe(card));
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    const el = document.querySelector('.fade-in-up');
+    if (el) {
+      observer.observe(el);
+    }
+  });
