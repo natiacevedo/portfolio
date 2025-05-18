@@ -1,3 +1,4 @@
+/* Desplegar menu hamburguesa */
 document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
     link.addEventListener('click', function () {
       const navbarCollapse = document.querySelector('.navbar-collapse');
@@ -8,6 +9,7 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
     });
   });
 
+  /* Animaciones */
    document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -59,3 +61,16 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(el);
     }
   });
+
+  /* Función para filtrar proyectos */
+  function filtrarProyectos(tipo) {
+      const proyectos = document.querySelectorAll('.col[data-tipo]');
+      proyectos.forEach(proyecto => {
+        const tipoProyecto = proyecto.getAttribute('data-tipo');
+        if (tipo === 'todos' || tipoProyecto === tipo) {
+          proyecto.style.display = 'block';
+        } else {
+          proyecto.style.display = 'none';
+        }
+      });
+    }

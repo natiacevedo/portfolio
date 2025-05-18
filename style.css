@@ -288,7 +288,6 @@ strong {
 }
 
 #proyectos h6{
-    font-family: 'Kalnia';
     text-align: center;
     margin-bottom: 10px;
 }
@@ -296,6 +295,13 @@ strong {
 .card{
   border: .2px solid rgb(113, 113, 113);
   border-radius: 20px;
+  background-color: transparent !important;
+  transition: all 0.8s ease;
+  color: var(--color2);
+}
+
+.card:hover{
+  background-color:var(--colorHover) !important;
 }
 
 .sectionProyectos{
@@ -326,16 +332,6 @@ strong {
 
 .proyecto.animate-in {
   animation: slideDown 0.8s ease-out forwards;
-}
-
-.card{
-  background-color: transparent !important;
-  transition: all 0.8s ease;
-  color: var(--color2);
-}
-
-.card:hover{
-  background-color:var(--colorHover) !important;
 }
 
 /* CONTACTO */
