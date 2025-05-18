@@ -34,7 +34,7 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
       if (entry.isIntersecting) {
         const element = entry.target;
         const index = [...document.querySelectorAll('.proyecto')].indexOf(element);
-        element.style.animationDelay = `${index * 0.6}s`;
+        element.style.animationDelay = `${index * 0.3}s`;
         element.classList.add('animate-in');
         observer.unobserve(element);
       }

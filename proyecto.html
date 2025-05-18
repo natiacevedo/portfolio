@@ -32,6 +32,87 @@
         <section class="container py-5" id="proyecto">
             <h1>Cargando...</h1>
         </section>
+
+        <section id="proyectos">
+          <div class="container sectionProyectos">
+            <h2 class="mb-4 text-center">Proyectos Web</h2>
+            <h6 id="servicios" class="fade-in-up text-center pb-2">desarrollo web • diseño ux/ui</h6>
+              <div class="text-center mb-4">
+                <button onclick="filtrarProyectos('todos')" class="button m-1">Todas los sitios</button>
+                <button onclick="filtrarProyectos('codigo')" class="button m-1">Código</button>
+                <button onclick="filtrarProyectos('wix')" class="button m-1">Wix</button>
+                <button onclick="filtrarProyectos('figma')" class="button m-1">Figma</button>
+              </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+              <div class="col" data-tipo="codigo">
+                <a href="proyecto.html?id=homesapiens" class="text-decoration-none">
+                  <div class="card shadow proyecto">
+                    <img src="img/Scene-10.png" alt="Mockup de web desarrollados con Visual Studio Code para HomeSapiens">
+                    <div class="card-body">
+                      <h6>Home Sapiens</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col" data-tipo="codigo">
+                <a href="proyecto.html?id=byluli" class="text-decoration-none">
+                  <div class="card shadow proyecto">
+                    <img src="img/byluli-mockup.png" alt="Mockup de web Byluli desarrollada con Visual Studio Code">
+                    <div class="card-body">
+                      <h6>Byluli</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col" data-tipo="wix">
+                <a href="proyecto.html?id=mare" class="text-decoration-none">
+                  <div class="card shadow proyecto">
+                    <img src="img/mare.png" alt="Mockups de webs diseñadas con Figma">
+                    <div class="card-body">
+                      <h6>Maré</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col" data-tipo="wix">
+                <a href="proyecto.html?id=charlies" class="text-decoration-none">
+                  <div class="card shadow proyecto">
+                    <img src="img/charlies.png" alt="Mockup de web diseñada en Wix para Charlie's">
+                    <div class="card-body">
+                      <h6>Charlie's Hybrid Training</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col" data-tipo="codigo">
+                <a href="proyecto.html?id=chevroni" class="text-decoration-none">
+                  <div class="card shadow proyecto">
+                    <img src="img/chevroni.png" alt="Mockups de webs diseñadas con Figma">
+                    <div class="card-body">
+                      <h6>Chevroni</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col" data-tipo="figma">
+                <a href="proyecto.html?id=chevronifigma" class="text-decoration-none">
+                  <div class="card shadow proyecto">
+                    <img src="img/prototipado.png" alt="Mockups de webs diseñadas con Figma">
+                    <div class="card-body">
+                      <h6>Chevroni Prototipado</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
 
     <footer>

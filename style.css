@@ -6,8 +6,6 @@
     --colorHover: #1b393a;
 }
 
-/* --color3: #EE174D; */
-
 @font-face {
     font-family: 'Kalnia';
     src: url('./fonts/Kalnia-Regular.ttf') format('truetype');
@@ -256,10 +254,9 @@ strong {
 }
 
 /* SERVICIOS */
-#servicios h3{
-  color: var(--color2);
-  font-family: 'Kalnia';
-  margin-bottom: 10px;
+
+#servicios{
+    color: var(--color2);
 }
 
 .fade-in-up {
@@ -362,6 +359,53 @@ strong {
 
 #contacto p a:hover{    
     border-bottom: var(--color3) 1px solid;
+}
+
+/* PROYECTO */
+h2{
+    font-family: 'Kalnia';
+    color: var(--color2);
+    margin-bottom: 10px;
+}
+
+.proyecto p{
+    color: var(--color2);
+}
+
+.proyecto-detalle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.proyecto-detalle p{
+  color: var(--color2);
+}
+
+.proyecto-descripcion {
+  background-color: var(--colorHover);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--color2);
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .proyecto-detalle {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .proyecto-detalle .w-50 {
+    width: 100%;
+  }
+
+  .proyecto-descripcion {
+    width: 90%;
+  }
 }
 
 /* FOOTER */
