@@ -271,11 +271,6 @@ strong {
 }
 
 /* PROYECTOS */
-
-#proyectos{
-    background-color: var(--color);
-    padding: 40px 0;
-}
   
 #proyectos h2{
     font-family: 'Kalnia';
