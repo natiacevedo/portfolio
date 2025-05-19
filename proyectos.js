@@ -25,7 +25,7 @@ const proyectos = {
         herramientas: "Wix",
         descripcion: "Maré es una clínica de medicina estética que combina tecnología, bienestar y cuidado personal. El objetivo principal del sitio fue facilitar la experiencia de sus pacientes, permitiendo la gestión de turnos online, registro de usuarios y la visualización clara de todos los tratamientos disponibles. La web también incluye una sección Sobre Maré, integración con el feed de Instagram para mostrar contenido actualizado, y un diseño responsive que acompaña la estética moderna y minimalista de la marca.",
         objetivo: "Proyecto realizado en Omni, agencia de marketing digital.",
-        imagen: "img/mare.png",
+        imagen: "img/mare2.png",
         fecha: "2025",
         link: "https://www.mareclinica.com/"
       },
@@ -56,6 +56,7 @@ const proyectos = {
         descripcion: "Diseño de prototipo de sitio web para Chevroni, empresa dedicada a la venta de plantas artificiales de todo tipo.",
         objetivo: "Desarrollo de prototipo para obligatorio de la carrera de Diseñador Digital - Universidad ORT del Uruguay",
         imagen: "img/prototipado.png",
+        fecha: "2024",
         link: "https://www.figma.com/proto/CxrPtpITxIO09ihp385N3V/Untitled?page-id=0%3A1&node-id=33-61&viewport=298%2C231%2C0.06&t=f7rYL6LxmOp9FHBy-1&scaling=scale-down-width&content-scaling=fixed"
     }
 };
