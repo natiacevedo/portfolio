@@ -7,9 +7,9 @@ const proyectos = {
         descripcion: "Home Sapiens es un estudio de diseño de interiores enfocado en transformar hogares con identidad. La web fue pensada para destacar visualmente el impacto de sus proyectos, integrando una sección de antes y después, testimonios de clientes satisfechos y un formulario de contacto claro y accesible. El diseño equilibra estética y funcionalidad, reflejando el estilo de la marca y facilitando la navegación tanto desde desktop como desde dispositivos móviles.",
         imagen: "img/Scene-10.png",
         fecha: "2024",
-        link: "https://homesapiens.netlify.app/"
+        link: "http://homesapiens.com.uy/"
       },
-      byluli: {
+      /* byluli: {
         titulo: "Byluli",
         tipo: "Web fullstack desarrollada en Visual Studio Code.",
         herramientas: "Visual Studio Code - HTML, CSS, JS y Render.",
@@ -18,10 +18,20 @@ const proyectos = {
         imagen: "img/byluli-mockup.png",
         fecha: "2024",
         link: "https://bylulifront.onrender.com/"
+      }, */
+      micatyler: {
+        titulo: "Mica Tyler",
+        tipo: "Web desarrollada con código.",
+        herramientas: "Visual Studio Code - HTML, CSS y JS.",
+        objetivo: "Desarrollo web para Mica Tyler - Directora de fotografía.",
+        descripcion: "Sitio web de Mica Tyler, un portfolio digital pensado para exhibir sus proyectos como directora de fotografía y transmitir su identidad artística en el ámbito cinematográfico.",
+        imagen: "img/micatyler-screen.png",
+        fecha: "2025",
+        link: "https://micatyler.netlify.app/"
       },
       mare: {
         titulo: "Mare",
-        tipo: "Sitio web diseñado en WIX",
+        tipo: "Sitio web diseñado en WIX junto con Omni.",
         herramientas: "Wix",
         descripcion: "Maré es una clínica de medicina estética que combina tecnología, bienestar y cuidado personal. El objetivo principal del sitio fue facilitar la experiencia de sus pacientes, permitiendo la gestión de turnos online, registro de usuarios y la visualización clara de todos los tratamientos disponibles. La web también incluye una sección Sobre Maré, integración con el feed de Instagram para mostrar contenido actualizado, y un diseño responsive que acompaña la estética moderna y minimalista de la marca.",
         objetivo: "Proyecto realizado en Omni, agencia de marketing digital.",
@@ -31,7 +41,7 @@ const proyectos = {
       },
       charlies: {
         titulo: "Charlie's Hybrid Training",
-        tipo: "Sitio web diseñado en WIX",
+        tipo: "Sitio web diseñado en WIX junto con Omni.",
         herramientas: "Wix Studio, Figma",
         descripcion: "Charlie’s es un gimnasio especializado en hybrid training. El sitio web fue creado con el objetivo de ofrecer una plataforma dinámica y funcional para sus miembros actuales y potenciales. El sitio permite a los usuarios explorar los distintos planes de entrenamiento, sus distintos 'hubs', diferenciar los tipos de clases con videos referenciales, inscribirse y contactar directamente con el equipo. También se trabajó en transmitir la energía y el enfoque del gimnasio a través de una estética potente, moderna y alineada con su identidad visual.",
         objetivo: "Proyecto realizado en Omni, agencia de marketing digital.",
@@ -39,19 +49,19 @@ const proyectos = {
         fecha: "2024",
         link: "https://www.somoscharlies.com/"
       },
-      chevroni: {
-        titulo: "Chevroni",
-        tipo: "Sitio web desarrollado con código",
-        herramientas: "HTML y CSS",
-        descripcion: "Sitio web para Chevroni, empresa dedicada a la venta de plantas artificiales de todo tipo. En esta web para desktop se puede ver su catálogo completo, filtrar los productos, añadirlos al carrito y contactarse con ellos.",
-        objetivo: "Desarrollo web para obligatorio de la carrera de Diseñador Digital - Universidad ORT del Uruguay",
-        imagen: "img/chevroni.png",
-        fecha: "2023",
-        link: "https://chevroni.netlify.app/"
+      mikamelloni: {
+        titulo: "Mika Melloni",
+        tipo: "Web desarrollada con código",
+        herramientas: "Visual Studio Code - HTML, JS y CSS",
+        descripcion: "Web de Mika Melloni, enfocada en dar a conocer sus servicios de bienestar integral. Combina coaching ontológico y Feng Shui clásico para guiar a las personas en procesos de transformación personal y del espacio.",
+        objetivo: "Desarrollo web para Mika Melloni.",
+        imagen: "img/mikamelloni.png",
+        fecha: "2025",
+        link: "https://mikamelloni.netlify.app/"
     },
     chevronifigma:{
         titulo: "Chevroni",
-        tipo: "Prototipo de web diseñado en Figma",
+        tipo: "Prototipo web diseñado en Figma",
         herramientas: "Figma",
         descripcion: "Diseño de prototipo de sitio web para Chevroni, empresa dedicada a la venta de plantas artificiales de todo tipo.",
         objetivo: "Desarrollo de prototipo para obligatorio de la carrera de Diseñador Digital - Universidad ORT del Uruguay",
@@ -67,23 +77,21 @@ const proyectos = {
     const contenedor = document.getElementById("proyecto");
     const p = proyectos[id];
 
-    if (p) {
-  document.title = p.titulo;
+ if (p) {
+  document.title = p.titulo + " | By enne.";
   contenedor.innerHTML = `
-    <div class="proyecto-detalle">
-      <div class="p-4">
+    <div class="proyecto-detalle d-flex" style="gap:20px; flex-wrap:wrap;">
+      <div class="info" style="flex:1; min-width:300px; padding:1rem;">
         <h2 class="my-4">${p.titulo}</h2>
         <p><strong>Tipo de desarrollo:</strong> ${p.tipo}</p>
         <p><strong>Herramientas:</strong> ${p.herramientas}</p>
         <p><strong>Año:</strong> ${p.fecha}.</p>
-        <p><strong>Objetivo:</strong> ${p.objetivo}</p>
+        <p><strong>Descripción:</strong> ${p.descripcion}</p>
       </div>
-      <div class="mb-4">
-        <img src="${p.imagen}" alt="Mockup de ${p.titulo}" style="width:100%; max-width:800px;" />
+      <div class="imagen" style="flex:1; min-width:300px; padding:1rem;">
+        <img src="${p.imagen}" alt="Mockup de ${p.titulo}" style="width:100%; height:auto; border-radius:8px;" />
       </div>
     </div>
-    <p class="proyecto-descripcion"><strong>Descripción:</strong> ${p.descripcion}</p>
-
     <div class="text-center my-4">
       <a href="${p.link}" target="_blank" class="button2 text-decoration-none">Visitar sitio</a>
     </div>
