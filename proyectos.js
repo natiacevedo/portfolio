@@ -57,7 +57,7 @@ const proyectos = {
         objetivo: "Desarrollo web para Mika Melloni.",
         imagen: "img/mikamelloni.png",
         fecha: "2025",
-        link: "https://mikamelloni.netlify.app/"
+        link: "http://mikamelloni.com/"
     },
     chevronifigma:{
         titulo: "Chevroni",
