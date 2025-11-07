@@ -35,16 +35,27 @@
 
         <section id="proyectos" class="mb-4">
           <div class="container sectionProyectos">
-            <h2 class="mb-4 text-center">Proyectos Web</h2>
-            <h6 id="servicios" class="fade-in-up text-center pb-2">desarrollo web • diseño ux/ui</h6>
+            <h2 class="mb-2 text-center">Proyectos Web</h2>
+            <h6 class="p-2">desarrollo web • diseño ux/ui</h6>
               <div class="text-center mb-4">
                 <button onclick="filtrarProyectos('todos')" class="button m-1">Todas los sitios</button>
                 <button onclick="filtrarProyectos('codigo')" class="button m-1">Código</button>
                 <button onclick="filtrarProyectos('wix')" class="button m-1">Wix</button>
                 <button onclick="filtrarProyectos('figma')" class="button m-1">Figma</button>
               </div>
+              
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
+              <div class="col" data-tipo="codigo">
+                <a href="proyecto.html?id=micatyler" class="text-decoration-none">
+                  <div class="card shadow proyecto">
+                    <img src="img/micatyler-screen.png" alt="Mockup de web Byluli desarrollada con Visual Studio Code">
+                    <div class="card-body">
+                      <h6>Mica Tyler - Cinematographer</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
               <div class="col" data-tipo="codigo">
                 <a href="proyecto.html?id=homesapiens" class="text-decoration-none">
                   <div class="card shadow proyecto">
@@ -57,11 +68,22 @@
               </div>
 
               <div class="col" data-tipo="codigo">
-                <a href="proyecto.html?id=micatyler" class="text-decoration-none">
+                <a href="proyecto.html?id=chk" class="text-decoration-none">
                   <div class="card shadow proyecto">
-                    <img src="img/micatyler-screen.png" alt="Mockup de web Byluli desarrollada con Visual Studio Code">
+                    <img src="img/chk.png" alt="Mockup web CHK">
                     <div class="card-body">
-                      <h6>Mica Tyler - Cinematographer</h6>
+                      <h6>CHK</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col" data-tipo="codigo">
+                <a href="proyecto.html?id=imhof" class="text-decoration-none">
+                  <div class="card shadow proyecto">
+                    <img src="img/imhof.png" alt="Mockup web Estudio Imhof">
+                    <div class="card-body">
+                      <h6>Estudio Imhof</h6>
                     </div>
                   </div>
                 </a>
@@ -110,6 +132,18 @@
                   </div>
                 </a>
               </div>
+
+              <div class="col" data-tipo="figma">
+                <a href="proyecto.html?id=byluli" class="text-decoration-none">
+                  <div class="card shadow proyecto">
+                    <img src="img/byluli.png" alt="Mockups de webs diseñadas con Figma">
+                    <div class="card-body">
+                      <h6>By Luli Prototipado</h6>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
             </div>
           </div>
         </section>

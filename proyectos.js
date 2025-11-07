@@ -29,6 +29,26 @@ const proyectos = {
         fecha: "2025",
         link: "https://micatyler.netlify.app/"
       },
+      chk: {
+        titulo: "CHK",
+        tipo: "Web desarrollada con código.",
+        herramientas: "Visual Studio Code - HTML, CSS y JS.",
+        objetivo: "Desarrollo web para CHK - Estudio jurídico.",
+        descripcion: "Sitio web de CHK, un estudio jurídico que ofrece servicios legales en Uruguay. La web ofrece información sobre sus servicios, su equipo de trabajo, el valor del coaching ontológico y el contacto directo con CHK.",
+        imagen: "img/chk.png",
+        fecha: "2025",
+        link: "https://estudio-chk.netlify.app/"
+      },
+      imhof: {
+        titulo: "Estudio Imhof",
+        tipo: "Web desarrollada con código.",
+        herramientas: "Visual Studio Code - HTML, CSS y JS.",
+        objetivo: "Desarrollo web para Estudio Imhof - Estudio jurídico.",
+        descripcion: "Sitio web de Estudio Imhof, un estudio jurídico que ofrece servicios legales. La web ofrece información sobre sus servicios, su equipo de trabajo, posibilidad de postularse para trabajar en el estudio y formulario de contacto.",
+        imagen: "img/imhof.png",
+        fecha: "2025",
+        link: "https://imhof.netlify.app/"
+      },
       mare: {
         titulo: "Mare",
         tipo: "Sitio web diseñado en WIX junto con Omni.",
@@ -68,6 +88,16 @@ const proyectos = {
         imagen: "img/prototipado.png",
         fecha: "2024",
         link: "https://www.figma.com/proto/CxrPtpITxIO09ihp385N3V/Untitled?page-id=0%3A1&node-id=33-61&viewport=298%2C231%2C0.06&t=f7rYL6LxmOp9FHBy-1&scaling=scale-down-width&content-scaling=fixed"
+    },
+    byluli:{
+        titulo: "By Luli",
+        tipo: "Prototipo web diseñado en Figma",
+        herramientas: "Figma",
+        descripcion: "Diseño de prototipo de sitio web para By Luli, emprendimiento de pastelería artesanal.",
+        objetivo: "Desarrollo de prototipo para obligatorio de la carrera de Diseñador Digital - Universidad ORT del Uruguay",
+        imagen: "img/byluli.png",
+        fecha: "2024",
+        link: "https://www.figma.com/proto/s0YEpo4ljzsQvyAzTRc6Z1/ByLuli-Prototipo-Web?node-id=6-117&t=Nh2aPjoCuvjfpeMq-1&scaling=scale-down-width&content-scaling=fixed&page-id=1%3A2"
     }
 };
 
