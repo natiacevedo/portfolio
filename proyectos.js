@@ -29,6 +29,16 @@ const proyectos = {
         fecha: "2025",
         link: "https://micatyler.netlify.app/"
       },
+      raiona: {
+        titulo: "Raiona Boxes",
+        tipo: "Web desarrollada con código.",
+        herramientas: "Visual Studio Code - HTML, CSS y JS.",
+        objetivo: "Desarrollo web para Raiona Boxes.",
+        descripcion: "Sitio web para Raiona Boxes, un catálogo web que reúne sus productos con información detallada, proyectos de clientes que confiaron en ellos y posibilidad de dirigirse a WhatsApp para realizar una compra o alquilar a través de un formulario web.",
+        imagen: "img/raiona.png",
+        fecha: "2025",
+        link: "https://raionaboxes.com/"
+      },
       chk: {
         titulo: "CHK",
         tipo: "Web desarrollada con código.",
@@ -108,7 +118,7 @@ const proyectos = {
     const p = proyectos[id];
 
  if (p) {
-  document.title = p.titulo + " | By enne.";
+  document.title = p.titulo + " | Natalia Acevedo";
   contenedor.innerHTML = `
     <div class="proyecto-detalle d-flex" style="gap:20px; flex-wrap:wrap;">
       <div class="info" style="flex:1; min-width:300px; padding:1rem;">

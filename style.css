@@ -36,6 +36,16 @@ h6 {
   text-align: center;
 }
 
+.estiloLogo, .estiloLogoFooter {
+  font-family: 'Kalnia';
+  color: var(--color2);
+  font-size: 18px;
+}
+
+.estiloLogoFooter {
+  margin: 10px;
+}
+
 /* HEADER */
 
 header {
@@ -424,7 +434,19 @@ footer{
       align-items: center;
       padding: 10px;
     }
-  }
+
+    .redes {
+      justify-content: center !important;
+      gap: 10px;
+    }
+
+    .redes a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+}
   
 /* Animaciones */
 
