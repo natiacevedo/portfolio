@@ -10,9 +10,14 @@
     box-sizing: border-box;
 }
 
-.libre-baskerville-normal {
+.libre-baskerville {
   font-family: "Libre Baskerville", serif;
-  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-normal {
+  font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -73,10 +78,6 @@ h3 {
   font-family: "Bentham", serif;
 }
 
-p {
-  font-family: "Libre Baskerville", serif;
-}
-
 .separador {
   width: 100px;
   height: 2px;
@@ -105,7 +106,6 @@ p {
 }
 
 .button {
-  font-family: "Bentham", serif;
   padding: 10px 20px;
   background-color: var(--marron);
   color: var(--beige);
