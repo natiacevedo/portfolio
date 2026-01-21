@@ -82,6 +82,11 @@ h3 {
   font-family: "Unna", serif;
 }
 
+.ancho {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .separador {
   width: 100px;
   height: 2px;
@@ -91,7 +96,7 @@ h3 {
 }
 
 .celebracion {
-  background-color: var(--blanco);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 10px;
   color: var(--marron);
@@ -130,7 +135,7 @@ h3 {
 }
 
 .cuentas {
-  background-color: var(--blanco);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 10px;
   color: var(--marron);
