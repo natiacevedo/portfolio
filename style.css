@@ -324,6 +324,10 @@ strong {
   margin: 0 auto;
 }
 
+.sectionGrafico{
+  margin-top: 40px;
+}
+
 .proyecto{
     transition: all 0.5s ease;
 }
