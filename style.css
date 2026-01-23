@@ -121,10 +121,18 @@ strong {
   min-height: 80vh;
 }
 
+.br-desktop {
+  display: none;
+}
+
 @media (min-width: 992px) {
   #hero {
     height: 500px;
     padding-top: 60px;
+  }
+
+  .br-desktop {
+    display: inline;
   }
 }
 
