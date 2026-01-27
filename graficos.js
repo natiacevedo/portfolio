@@ -4,7 +4,7 @@ const diseños = {
         tipo: "Rediseño de logo para CHK - Estudio Jurídico.",
         herramientas: "Adobe Illustrator",
         objetivo: "Rediseñar el logo de CHK para reflejar su nueva identidad corporativa, integrando una mirada jurídica moderna con un enfoque centrado en el coaching ontológico, la confianza y el acompañamiento estratégico.",
-        imagen: "img/chk-diseño.jpg",
+        imagen: "img/chk-diseno.jpg",
         fecha: "2025",
       },
     redes:{
