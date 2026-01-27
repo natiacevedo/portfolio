@@ -355,6 +355,19 @@ strong {
 
 /* CONTACTO */
 
+#bodycontact{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#maincontact{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #contacto{
     color: var(--color2);
 }
