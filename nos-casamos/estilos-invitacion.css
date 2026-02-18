@@ -91,6 +91,11 @@ h3 {
   text-align: center;
 }
 
+.cuentas span {
+  color: var(--marron) !important;
+  text-decoration: none !important;
+}
+
 .ancho {
   width: 80%;
   margin: 0 auto;
