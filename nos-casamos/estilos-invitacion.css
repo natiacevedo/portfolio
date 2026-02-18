@@ -70,6 +70,23 @@ html, body {
   align-items: center;
 }
 
+/* ===== DESKTOP ===== */
+@media (min-width: 992px) {
+
+  .inicial {
+    background-image: url("img-elimati/EliasMatilde-Desktop.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .invitacion {
+    background-image: url("img-elimati/EliasMatilde-Desktop2.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
 h1, h2 {
   font-family: "Unna", serif;
 }
