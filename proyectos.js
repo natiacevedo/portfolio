@@ -89,6 +89,16 @@ const proyectos = {
         fecha: "2025",
         link: "http://mikamelloni.com/"
     },
+    elalero:{
+        titulo: "El Alero",
+        tipo: "Prototipo web diseñado en Figma",
+        herramientas: "Figma",
+        descripcion: "Diseño de prototipo de sitio web para El Alero luego desarrollado con Wix, empresa dedicada al alquiler de carpas y mobiliario para eventos.",
+        objetivo: "Desarrollo de prototipo para El Alero",
+        imagen: "img/elalero.png",
+        fecha: "2025",
+        link: "https://www.figma.com/proto/PiGav4QzCP33t6lLAVcqAy/El-Alero?node-id=1-2&viewport=24%2C138%2C0.13&t=SzbxItm6MoHC1glb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&page-id=0%3A1"
+    },
     chevronifigma:{
         titulo: "Chevroni",
         tipo: "Prototipo web diseñado en Figma",
