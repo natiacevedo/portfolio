@@ -1,5 +1,5 @@
   // 11 de abril a las 18:00 (hora Uruguay UTC-3)
-  const targetDate = new Date("2026-04-11T18:00:00-03:00").getTime();
+  const targetDate = new Date("2026-06-11T18:00:00-03:00").getTime();
 
   const countdown = setInterval(() => {
     const now = new Date().getTime();
