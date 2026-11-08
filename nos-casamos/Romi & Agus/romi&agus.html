@@ -123,7 +123,7 @@
                     <img src="img/vestido-de-novia.png" alt="brindis" width="50px" class="mb-4">
                 </div>
                 <h2 class="titulo mb-2">VESTIMENTA FORMAL</h2>
-                <p class="p-2">Reservamos el color blanco para la novia y los siguientes tonos de bordó para las damas de honor:</p>
+                <p>Reservamos el color blanco para la novia y los siguientes tonos para las damas de honor:</p>
 
                 <div>
                     <img src="img/tonos.png" alt="tonos damas de honor" width="200px" class="mb-4">
@@ -140,7 +140,7 @@
 
     <h2 class="titulo mb-2">REGALOS</h2>
 
-    <p class="p-2">
+    <p>
         Lo importante es tu presencia, pero si deseas hacernos un regalo
         te compartimos nuestras cuentas.
     </p>
@@ -282,68 +282,197 @@
 
         </div>
 
-        <section class="mt-4 container">
-            <div class="formulario">
-                <div class="subtitulo mb-3">ROMI &amp; AGUS · 26.12.2026</div>
-                <h2 class="mb-1">CONFIRMÁ TU ASISTENCIA</h2>
-                <p class="intro">¡Nos encantaría compartir este día con vos!</p>
-                <form id="formConfirmacion">
-                <div class="campo"><label for="nombre">Nombre *</label><input id="nombre" name="nombre" type="text" maxlength="80" required></div>
-                <div class="campo"><label for="apellido">Apellido *</label><input id="apellido" name="apellido" type="text" maxlength="80" required></div>
+ 
+<section class="mt-4 container">
+    <div class="formulario">
+
+        <div class="subtitulo mb-3">
+            ROMI &amp; AGUS · 26.12.2026
+        </div>
+
+        <h2 class="mb-1">CONFIRMÁ TU ASISTENCIA</h2>
+
+        <p class="intro">
+            ¡Nos encantaría compartir este día con vos!
+        </p>
+
+        <form id="formConfirmacion">
+
+            <!-- NOMBRE -->
+            <div class="campo">
+                <label for="nombre">Nombre *</label>
+                <input
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    maxlength="80"
+                    required>
+            </div>
+
+            <!-- APELLIDO -->
+            <div class="campo">
+                <label for="apellido">Apellido *</label>
+                <input
+                    id="apellido"
+                    name="apellido"
+                    type="text"
+                    maxlength="80"
+                    required>
+            </div>
+
+            <!-- CONFIRMACIÓN DE ASISTENCIA -->
+            <fieldset>
+                <legend>¿Confirmás tu asistencia? *</legend>
+
+                <label class="opcion">
+                    <input
+                        type="radio"
+                        name="asiste"
+                        value="Sí"
+                        required>
+                    ¡Sí, ahí estaré!
+                </label>
+
+                <label class="opcion">
+                    <input
+                        type="radio"
+                        name="asiste"
+                        value="No">
+                    No podré asistir
+                </label>
+            </fieldset>
+
+            <!-- CAMPOS SI CONFIRMA ASISTENCIA -->
+            <div id="camposAsistencia" class="oculto">
+
+                <!-- RESTRICCIÓN ALIMENTARIA -->
                 <fieldset>
-                    <legend>¿Confirmás tu asistencia? *</legend>
-                    <label class="opcion"><input type="radio" name="asiste" value="Sí" required> ¡Sí, ahí estaré!</label>
-                    <label class="opcion"><input type="radio" name="asiste" value="No"> No podré asistir</label>
+                    <legend>
+                        ¿Tenés alguna restricción alimentaria?
+                    </legend>
+
+                    <label class="opcion">
+                        <input
+                            type="radio"
+                            name="restriccion"
+                            value="No"
+                            checked>
+                        No
+                    </label>
+
+                    <label class="opcion">
+                        <input
+                            type="radio"
+                            name="restriccion"
+                            value="Sí">
+                        Sí
+                    </label>
                 </fieldset>
-                <div id="camposAsistencia" class="oculto">
-                    <fieldset id="campoAcompanantes">
-                    <legend>¿Venís con acompañante?</legend>
-                    <label class="opcion"><input type="radio" name="acompana" value="No" checked> Voy solo/a</label>
-                    <label class="opcion"><input type="radio" name="acompana" value="Sí"> Con acompañante</label>
-                    </fieldset>
-                    <div id="datosAcompanante" class="oculto">
-                    <div class="campo"><label for="nombreAcompanante">Nombre y apellido del acompañante *</label><input id="nombreAcompanante" name="nombreAcompanante" type="text" maxlength="160"></div>
-                    <fieldset>
-                        <legend>¿Tu acompañante tiene alguna restricción alimentaria?</legend>
-                        <label class="opcion"><input type="radio" name="restriccionAcomp" value="No" checked> No</label>
-                        <label class="opcion"><input type="radio" name="restriccionAcomp" value="Sí"> Sí</label>
-                    </fieldset>
-                    <div class="campo oculto" id="cajaDetalleAcomp"><label for="detalleAcomp">¿Cuál? *</label><textarea id="detalleAcomp" name="detalleAcomp" rows="2" maxlength="500"></textarea></div>
-                    </div>
-                    <fieldset>
-                    <legend>¿Tenés alguna restricción alimentaria?</legend>
-                    <label class="opcion"><input type="radio" name="restriccion" value="No" checked> No</label>
-                    <label class="opcion"><input type="radio" name="restriccion" value="Sí"> Sí</label>
-                    </fieldset>
-                    <div class="campo oculto" id="cajaDetalle"><label for="detalle">¿Cuál? *</label><textarea id="detalle" name="detalle" rows="2" maxlength="500" placeholder="Celíaco/a, vegetariano/a, alergias..."></textarea></div>
-                    <div class="campo"><label for="cancion">¿Qué canción no puede faltar? 🎶</label><input id="cancion" name="cancion" type="text" maxlength="200" placeholder="Canción y artista (opcional)"></div>
-                </div>
-                <div class="campo"><label for="mensaje">¿Querés dejarles un mensaje a los novios? 💌 (opcional)</label><textarea id="mensaje" name="mensaje" rows="4" maxlength="1500" placeholder="Un deseo, unas palabras lindas o lo que quieras compartir..."></textarea></div>
 
-                <div class="botones text-center">
-                    <button id="enviar"
-                            type="submit"
-                            class="button the-seasons enviar-confirmacion">
-                        ENVIAR CONFIRMACIÓN
-                    </button>
+                <!-- DETALLE DE RESTRICCIÓN -->
+                <div class="campo oculto" id="cajaDetalle">
+                    <label for="detalle">¿Cuál? *</label>
+
+                    <textarea
+                        id="detalle"
+                        name="detalle"
+                        rows="2"
+                        maxlength="500"
+                        placeholder="Celíaco/a, vegetariano/a, alergias..."></textarea>
                 </div>
 
-                <div id="estado" class="estado" role="status" aria-live="polite"></div>
-                </form>
-            </div>
-        </section>
+                <!-- CANCIÓN OPCIONAL -->
+                <div class="campo">
+                    <label for="cancion">
+                        ¿Qué canción no puede faltar? 🎶
+                    </label>
 
-        <div class="text-center celebracion">
-            <div>
-                <img src="img/R&A-LOGO.png" alt="brindis" width="200px" class="mb-4">
-            </div>
-            <h2 class="titulo mb-4 p-4">¡Te esperamos!</h2>
+                    <input
+                        id="cancion"
+                        name="cancion"
+                        type="text"
+                        maxlength="200"
+                        placeholder="Canción y artista (opcional)">
+                </div>
 
             </div>
 
-    <footer>
-        <p class="text-center smaller p-3 mb-0">© 2026 Desarrollado por <!-- <a href="https://natiacevedo.com/"> -->Natalia Acevedo<!-- /a> --></p>
-    </footer>
+            <!-- MENSAJE PARA LOS NOVIOS -->
+            <div class="campo">
+                <label for="mensaje">
+                    ¿Querés dejarles un mensaje a los novios? 💌
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    maxlength="1500"
+                    placeholder="Un deseo, unas palabras lindas o lo que quieras compartir..."></textarea>
+            </div>
+
+            <!-- BOTÓN DE ENVÍO -->
+            <div class="botones text-center">
+                <button
+                    id="enviar"
+                    type="submit"
+                    class="button the-seasons enviar-confirmacion">
+                    ENVIAR CONFIRMACIÓN
+                </button>
+            </div>
+
+            <!-- ESTADO DEL ENVÍO -->
+            <div
+                id="estado"
+                class="estado"
+                role="status"
+                aria-live="polite">
+            </div>
+
+        </form>
+
+    </div>
+</section>
+
+
+        
+        <!-- BANNER FINAL -->
+        <div class="invitacion-boda cierre-boda">
+
+            <div class="portada-boda portada-final">
+
+                <!-- Imágenes según dispositivo -->
+                <picture>
+                    <source
+                        media="(min-width: 992px)"
+                        srcset="img/FOTO -3.jpg">
+
+                    <img
+                        src="img/portada2.jpg"
+                        alt="Romina y Agustín"
+                        class="imagen-final">
+                </picture>
+
+                <!-- Contenido sobre la imagen -->
+                <div class="texto-portada texto-final">
+
+                    <img
+                        src="img/R&A-LogoBlanco.png"
+                        alt="Romi y Agus"
+                        class="logo-final">
+
+                    <h4 class="mensaje-final">¡TE ESPERAMOS!</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+<!--     <footer>
+        <p class="text-center smaller p-3 mb-0">© 2026</p>
+    </footer> -->
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>

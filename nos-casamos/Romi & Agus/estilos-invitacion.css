@@ -190,10 +190,6 @@ h4 {
    BOTONES
 ========================================= */
 
-.botones {
-  margin-top: 30px;
-}
-
 .button {
   display: inline-block;
   color: var(--negro);
@@ -203,7 +199,7 @@ h4 {
   font-weight: normal;
   cursor: pointer;
   padding: 10px 20px;
-  margin: 20px auto;
+  margin: 10px auto;
   border-radius: 15px;
   font-size: 15px;
   text-align: center;
@@ -547,6 +543,31 @@ h4 {
   background: rgba(255,255,255,.68); 
 }
 
+
+/* =========================================
+   TIPOGRAFÍA DEL FORMULARIO
+========================================= */
+
+.formulario,
+.formulario p,
+.formulario label,
+.formulario legend,
+.formulario input,
+.formulario textarea,
+.formulario button,
+.formulario .subtitulo,
+.formulario .estado {
+    font-family: "the-seasons", serif;
+}
+
+/* Título del formulario */
+.formulario h2 {
+    font-family: "Luxes Serif", serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+
 .subtitulo { 
   text-align: center; 
   font-size: 12px; 
@@ -600,7 +621,7 @@ fieldset {
 }
 
 .opcion input {
-  accent-color: #7a6658;
+  accent-color: var(--negro);
 }
 
 .oculto {
@@ -767,5 +788,120 @@ footer p { margin-bottom: 0; }
         opacity: 1 !important;
         transform: none !important;
         transition: none !important;
+    }
+}
+
+
+/* =========================================
+   BANNER FINAL DE LA INVITACIÓN
+========================================= */
+
+.cierre-boda {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.portada-final {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.portada-final picture,
+.portada-final .imagen-final {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.portada-final .imagen-final {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Degradado suave para legibilidad */
+.portada-final::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 35%,
+        rgba(0, 0, 0, 0.35) 100%
+    );
+    pointer-events: none;
+}
+
+/* Contenido superpuesto */
+.texto-final {
+    position: absolute;
+    z-index: 2;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    color: white;
+}
+
+/* Logo R&A */
+.portada-final .logo-final {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto 20px;
+    object-fit: contain;
+}
+
+/* Mensaje final */
+.mensaje-final {
+    letter-spacing: 5px;
+    color: white;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .portada-final {
+        height: 80vh;
+        height: 80svh;
+    }
+
+    .portada-final .logo-final {
+        width: 150px;
+    }
+
+    .texto-final {
+        bottom: 50px;
+    }
+}
+
+
+/* =========================================
+   IMÁGENES RESPONSIVE - BANNER FINAL
+========================================= */
+
+/* MOBILE Y TABLET */
+.portada-final .imagen-final {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .portada-final {
+        height: 75vh;
+    }
+
+    .portada-final .imagen-final {
+        object-position: center center;
     }
 }
