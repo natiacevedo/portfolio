@@ -29,6 +29,18 @@ body {
   overflow-x: hidden;
 }
 
+.libre-baskerville {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.baskervville-normal {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* =========================================
    TIPOGRAFÍAS
 ========================================= */
@@ -40,10 +52,7 @@ body {
   font-style: normal;
 }
 
-.the-seasons,
-p,
-.time,
-h6 {
+.the-seasons, p, .time, h6 {
   font-family: "the-seasons", serif;
 }
 
@@ -538,7 +547,7 @@ h4 {
   max-width: 580px; 
   margin: 0 auto; 
   padding: 28px 24px; 
-  border: 1px solid var(--negro); 
+  border: 1px solid #393939; 
   border-radius: 16px; 
   background: rgba(255,255,255,.68); 
 }
@@ -572,7 +581,7 @@ h4 {
   text-align: center; 
   font-size: 12px; 
   letter-spacing: .2em; 
-  color: #776c63; 
+  color: #393939; 
 }
 
 .intro {
@@ -621,7 +630,7 @@ fieldset {
 }
 
 .opcion input {
-  accent-color: var(--negro);
+  accent-color: #393939;
 }
 
 .oculto {
@@ -641,8 +650,6 @@ fieldset {
   .formulario { padding: 24px 18px; }
   h2 { font-size: 20px; }
 }
-
-
 
 .btn-copiar {
     background: transparent;
